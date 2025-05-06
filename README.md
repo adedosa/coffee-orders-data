@@ -2,29 +2,29 @@
 
 ## Overview
 
-This project involved analyzing a small dataset of coffee orders for an online store from 2019 till 2022 . . The goal was to understand sales trends by identifying the top-selling coffee type, top customers, and sales by each country.  The analysis was performed using Microsoft Excel.
+This project involved analyzing a small dataset of coffee orders for an online store from 2019 till 2022 . The goal was to understand sales trends by identifying the top-selling coffee type, top customers, and sales by each country.  The analysis was performed using Microsoft Excel.
 ## Dataset
 
-The dataset used in this project is named `[YourFileName.csv or YourFileName.xlsx]` and contains the following columns:
+The dataset used in this project is named `coffeeOrdersData.xlsx` and contains 3 tables named:
 
-* **[Column Name 1]:** [Brief description of the column and its data type, e.g., "Date of the transaction (YYYY-MM-DD)"]
-* **[Column Name 2]:** [Brief description, e.g., "Name of the product sold (Text)"]
-* **[Column Name 3]:** [Brief description, e.g., "Quantity of the product purchased (Integer)"]
-* **[Column Name 4]:** [Brief description, e.g., "Price of a single unit of the product (Currency)"]
-* **[Column Name 5]:** [Brief description, e.g., "Unique identifier for each customer (Integer)"]
-    * *(Add descriptions for all relevant columns in your dataset)*
+* **Orders:** This table contains the number of orders places from 2019 - 2022 and contains the Order ID, Date, Customer ID, Product ID and Quantity. This is where the cleaning and analysis was performed.
+* **Customers:** This table contains the information about the Customers including their customer ID, Name, Email, Phone number, Loyalty card and full address.
+* **Products:** This is the table that has the information about the products in stock such as the Product ID, Coffee type, Roast type, Size, Unit price, and Profit.
 
-The dataset was [mention the source of the data or how it was created, e.g., "extracted from the company's internal database" or "created for this exercise"].
+The dataset was created for this exercise.
 
 ## Analysis Steps
 
 The following steps were taken to analyze the data:
 
 1.  **Data Cleaning:**
-    * [Describe any data cleaning steps you performed in Excel, e.g., "Checked for and removed any duplicate rows." or "Handled missing values in the 'Customer ID' column by [your method]." or "Standardized text entries in the 'Product' column using the `TRIM` function."]
+    * Checked for and removed any duplicate rows. 
+	* Handled the missing values in the orders table such as the customer name, email and country using the XLOOKUP function.
+	* Used index match to get the dynamic values for coffee type, roast type, size and unit price.
+	* Used custom formatting to change date from mm-dd-yyyy format to dd-mmm-yyyy, to change the size values to one decimal place and add kg, and to add currency to the price and sales numbers.
 2.  **Descriptive Statistics:**
-    * [Mention the key metrics you calculated and how, e.g., "Calculated the total sales for the month using the `SUM` function on the 'Price' and 'Quantity' columns."]
-    * [e.g., "Determined the average order value by dividing the total sales by the number of unique orders."]
+    * Got the sales by multiplying unit price by the quantity sold to each customer
+    * Used multiple IF statements to populate the coffee type names with the full name not the abbreviation
     * [e.g., "Identified the most popular product by counting the occurrences of each product using the `COUNTIF` function."]
 3.  **Basic Visualization:**
     * [Describe the charts you created and their purpose, e.g., "Created a bar chart to visualize the total sales for each product."]
