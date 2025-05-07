@@ -19,44 +19,42 @@ The following steps were taken to analyze the data:
 
 1.  **Data Cleaning:**
     * Checked for and removed any duplicate rows. 
-	* Handled the missing values in the orders table such as the customer name, email and country using the XLOOKUP function.
+	* Handled the missing values in the orders table such as the customer name, email, country and loyalty cards using the XLOOKUP function.
 	* Used index match to get the dynamic values for coffee type, roast type, size and unit price.
 	* Used custom formatting to change date from mm-dd-yyyy format to dd-mmm-yyyy, to change the size values to one decimal place and add kg, and to add currency to the price and sales numbers.
 2.  **Descriptive Statistics:**
     * Got the sales by multiplying unit price by the quantity sold to each customer
     * Used multiple IF statements to populate the coffee type names with the full name not the abbreviation
-    * [e.g., "Identified the most popular product by counting the occurrences of each product using the `COUNTIF` function."]
+    * Converted the orders table to an actual table to make it easier to create 3 pivot tables named TotalSales, Country and Top5Customers. 
 3.  **Basic Visualization:**
-    * [Describe the charts you created and their purpose, e.g., "Created a bar chart to visualize the total sales for each product."]
-    * [e.g., "Generated a line chart to show the trend of daily sales over the month."]
-    * *(You can even mention the Excel features you used to create these charts)*
+    * Created a bar chart to visualize the top 5 customers and the total sales by country. 
+    * Created a line chart to visulaize the total sales over time.
+    * Inserted a timeline to filter the sales by the year
+	* Inserted a slicer for the roast type name, size and loyalty card to filter the total sales 
 
 ## Key Findings
 
 Based on the analysis, some key findings include:
 
-* [State your first key insight, e.g., "The total sales for January 2025 were $[amount]."]
-* [State your second key insight, e.g., "The most popular product was '[Product Name]', accounting for [percentage]% of total sales."]
-* [State your third key insight, e.g., "There was a noticeable increase in sales during the second week of January."]
-    * *(List 2-3 significant observations from your analysis)*
+* The total sales from 2019 till 2022 is 45,134
+* The most popular coffee type was Excelsa which had total sales of $12306 and the least popular was the Robusta which sold at $9005 total sales
+* The USA has the highest number of sales across all the countries at $35639, and the lowest was the United Kingdom at $2799
 
 ## Files Included
 
-* `[YourFileName.csv or YourFileName.xlsx]`: The raw dataset used for the analysis.
-* `[YourFileName_Analyzed.xlsx]` (Optional): The Excel file containing the formulas, calculations, and charts.
+* `coffeeOrdersData.xlsx`: The raw dataset used for the analysis.
+* `coffeeOrdersDataDayo.xlsx` : The Excel file containing the formulas, calculations, and charts.
 * `README.md`: This file, providing an overview of the project.
 
 ## Tools Used
 
 * Microsoft Excel
 
-## Next Steps (Optional)
-
-* [Suggest potential next steps or further analysis, e.g., "Further analysis could involve segmenting customers based on their purchase history." or "Exploring the reasons behind the sales peak in the second week."]
 
 ## Author
 
-* [Your Name]
-* [Your GitHub Profile Link (Optional)]
+* Dayo Akerele
+* https://www.linkedin.com/in/dayo-akerele/
+* https://github.com/adedosa
 
 ---
