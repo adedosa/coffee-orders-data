@@ -36,7 +36,7 @@ The following steps were taken to analyze the data:
 
 Based on the analysis, some key findings include:
 
-* The total sales from 2019 till 2022 is 45,134
+* The total sales from 2019 till 2022 is $45,134
 * The most popular coffee type was Excelsa which had total sales of $12306 and the least popular was the Robusta which sold at $9005 total sales
 * The USA has the highest number of sales across all the countries at $35639, and the lowest was the United Kingdom at $2799
 
